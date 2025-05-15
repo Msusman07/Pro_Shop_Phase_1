@@ -5,12 +5,12 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node Backend/server.js",
+    "server": "nodemon Backend/server.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d",
+    "data:import": "node Backend/seeder",
+    "data:destroy": "node Backend/seeder -d",
     "build": " npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Mohammed Shaik Usman D",
